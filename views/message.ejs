@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<body>
+    <form action="/message" method="post">
+        <input type="text" name="title" placeholder="Title ...">
+        <input type="text" name="image" placeholder="Image URL ...">
+        <input type="text" name="price" placeholder="Price E.g 100 ...">
+        <!-- <img name="image" alt=""> -->
+        <textarea placeholder="Write a message here ..." name="message" id="" cols="30" rows="10"></textarea>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
+
+<%- include("partials/footer") %>

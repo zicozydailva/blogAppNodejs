@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+<div class="productContainer">
+  <div class="productItem">
+    <h1>Our Products</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id
+      architecto vero maxime, incidunt corrupti neque eveniet? Sunt maiores at
+      architecto quasi temporibus aperiam dicta, explicabo minima non a quis
+      quisquam, illo voluptas voluptates? In at hic enim quidem sunt!
+    </p>
+  </div>
+  <div class="productItem">
+    <% posts.forEach(post => { %>
+    <h1><%= post.title %></h1>
+    <h4>$<%= post.price %></h4>
+     <img src="<%= post.image %>" alt="">
+    <p><%= post.message %></p>
+    <!-- <% console.log(post) %> <%}) %> -->
+  </div>
+</div>
+
+<!-- <%- include("partials/footer") -%> -->
